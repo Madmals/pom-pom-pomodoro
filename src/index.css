@@ -1,0 +1,28 @@
+*{font-family: 'Open Sans',
+sans-serif;}
+
+
+::placeholder {
+    color: #000 !important;
+    opacity: 1 !important;
+    font-size: 3.2vh;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000 !important;
+    font-size: 3.2vh;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000 !important;
+    font-size: 3.2vh;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
