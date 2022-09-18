@@ -16,18 +16,17 @@ export default function MyTimer({ expiryTimestamp }) {
   const [starts, setStarts] = startted;
   const [timerForModa, settimerForModa] = timerModa;
   const [timepomo, setTimepomo] = timepomos;
-  const { seconds, minutes, isRunning, start, pause, resume, restart } =
+  const { seconds, minutes, isRunning, pause, resume, restart } =
     useTimer({
       expiryTimestamp,
       onExpire: handleExpired,
       autoStart: false,
     });
 
-  // const timePomo = 15;
   if (breakTimerDiff) {
-    settimerForModa(10);
+    settimerForModa(180);
   } else {
-    settimerForModa(20);
+    settimerForModa(300);
   }
 
   const time = new Date();

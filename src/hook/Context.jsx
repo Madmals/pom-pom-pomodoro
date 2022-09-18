@@ -27,7 +27,7 @@ export default function TodoProvider({ children, expiryTimestamp }) {
   const handleCreate = async (e) => {
     try {
       e.preventDefault();
-      setTimepomo(30)
+      setTimepomo(1500)
       task.length > 0 ? setTimere(false) : setPlaceholder("Put task 1st");
       setFinish(0);
       await db.tasks.add({
@@ -55,7 +55,7 @@ export default function TodoProvider({ children, expiryTimestamp }) {
   };
 
   const handleClickEachTask = () => {
-      setTimepomo(30)
+      setTimepomo(1500)
     setFlip(true);
     setTimere(false);
     setTimeTimer(false);

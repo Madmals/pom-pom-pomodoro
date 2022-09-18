@@ -24,9 +24,10 @@ export default function SingleTodo() {
       <div className="">
         {eachtask &&
           eachtask.map((each) => (
-            <div className="flex  w-[30vw] justify-content-center items-center">
-              <div
+            <div className="flex  w-[30vw] justify-content-center items-center"
                 key={each.id}
+            >
+              <div
                 onClick={() => handleClickOnTask(each.id)}
                 className="w-[25vw] border-r border-b-2 border-l-2 border-t flex justify-center items-center hover:bg-bubble-gum"
               >
