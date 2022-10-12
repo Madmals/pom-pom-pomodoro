@@ -6,7 +6,6 @@ import About from "./components/About";
 
 
 function App() {
-console.log()
 
   return (
     <div className="App">
